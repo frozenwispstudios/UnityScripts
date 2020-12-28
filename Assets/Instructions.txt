@@ -1,0 +1,3 @@
+The Health script is the main one.
+HealthFollowCamera script inherits from Health Script to show how the UI can follow the camera in case this is needed (eg, when the Canvas in in the World).
+The ClickDamage script uses the TakeDamage() and Heal() functions to show how to change the health of characters.
