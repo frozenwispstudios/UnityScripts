@@ -7,15 +7,15 @@ Completed
 -Save and load system  
 -ScreenShot system  
 -Runtime Nav mesh Creation  
+-Health Bar basics  
 
 Todo  
 -Wave Spawning System  
 -Boid Fish A.I  
 -Dialogue System   
--Health Bar basics  
 -Pause Menu  
 -Rope/Chain Creation  
 -Mini map  
 -Scene Transitions  
 -Spline Test Tool  
--A.I node Creation  
+-A.I node Creation Tool 
