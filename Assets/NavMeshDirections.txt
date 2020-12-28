@@ -1,0 +1,16 @@
+To get the runtime nav mesh working on your project you need:
+
+1) To import the NavMeshComponentsPackage into your Unity project.
+2) Set a NavMeshSurface object in your scene:
+	1. Create an empty Object
+	2. Add the component NavMeshSurface
+3) Make sure your terrain and objects that are going to be included in the NavMesh are static.
+4) Objects which are obstacles or which will be part of the NavMesh at the beginning, but will be destroyed later, need to have a component called NavMeshObstacle.
+	- If the NavMeshObstacle will be affecting the NavMesh it will need the "Carve" box ticked. 
+	- If the obstacle will only affect the terrain when it is not moving tick: Carve Only Stationary.
+5) After you have created your world, on the same script:
+	1. Create a variable NavMeshSurface surface.
+	2. Get a reference to the NavMeshSurface by:
+		- Getting it directly from the scene by making it: [SerializedField]; OR
+		- Finding the object on the Start() function: surface = FindObjectOfType<NavMeshSurface>();
+	3. Call surface.BuildNavMesh() *after* your world has been created.
